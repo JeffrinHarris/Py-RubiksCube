@@ -70,8 +70,8 @@ while True:
 
     cubeSide=''
 
-    # Convert to HSV
-    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    # # Convert to HSV
+    # hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     org = frame
 
     image = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
@@ -169,7 +169,7 @@ while True:
 
     cv2.imshow("Edge", image)
     cv2.imshow("Original", frame)
-    cv2.imshow("Hsv", hsv)
+    # cv2.imshow("Hsv", hsv)
     # cv2.imshow('cutted contour',hsv[MINY:MAXY,MINX:MAXX])
     
     key = cv2.waitKey(1)
